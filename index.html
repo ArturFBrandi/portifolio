@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artur Brandi — Software &amp; AI Engineer</title>
+<meta name="description" content="Portfolio of Artur Brandi — Backend Software Engineer building integration platforms and AI-assisted engineering workflows, and an indie game developer.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="logo" href="#top" aria-label="Artur Brandi — back to top">AB</a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <p class="eyebrow">Backend Software Engineer</p>
+    <h1>Artur Brandi</h1>
+    <p class="hero-lede">
+      I build scalable integration platforms with NestJS, TypeScript, and AWS,
+      and explore multi-agent AI systems and indie game development on the side.
+      Based in São Paulo, Brazil, open to remote, hybrid, and on-site work.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">View projects</a>
+    </div>
+    <div class="hero-links">
+      <a href="https://github.com/ArturFBrandi" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/arturbrandi" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Selected work</h2>
+
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-status">Public repository</p>
+        <h3>AI Hardcore Engineer — Getnet Multi-Agent Support System</h3>
+        <ul class="project-tags">
+          <li>Python</li><li>LangGraph</li><li>FastAPI</li><li>RAG</li><li>Qdrant</li><li>PostgreSQL</li><li>Docker</li>
+        </ul>
+        <p>
+          A production-style multi-agent customer support system built for the <em>AI Hardcore Engineer</em> challenge.
+          Four specialized agents — Router, Knowledge, Customer Support, and Human Escalation — plus a Response
+          Synthesizer are orchestrated as a LangGraph state machine over the MiniMax-M3 reasoning model, with
+          agents running in parallel when a request needs both. The Knowledge Agent answers from a RAG index built
+          on Qdrant; the Customer Support Agent uses typed, authorization-scoped tools over a synthetic Postgres
+          backend; requests that can't be resolved safely are escalated to a human. Guardrails run on both input
+          and output.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/ArturFBrandi/ai-hardcore-engineer" target="_blank" rel="noopener">View on GitHub ↗</a>
+          <a href="https://youtu.be/j-LC4XAF0UM" target="_blank" rel="noopener">Watch walkthrough ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-body">
+        <p class="project-status">Private repository · in development</p>
+        <h3>Farmoria</h3>
+        <ul class="project-tags">
+          <li>Unity</li><li>C#</li><li>Solo dev</li><li>Game design</li><li>Project management</li>
+        </ul>
+        <p>
+          An indie game. The player shipwrecks on an island and washes up on an abandoned farm
+          that's been overrun by monsters and sealed off from the rest of the island by the locals. The core loop:
+          clear the farm, build it back up, befriend the islanders, descend into a cave, and take down what's
+          waiting at the bottom — with farming, livestock, mining, fishing, and rich NPCs along the way. Built solo in
+          Unity, with a spec-driven development process for every feature.
+        </p>
+        <div class="project-links">
+          <span class="project-links-disabled">Repository not public yet</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="about" id="about">
+    <h2>What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>TypeScript, JavaScript, Python, C#</p>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <p>NestJS, Node.js, FastAPI, Next.js, .NET Framework</p>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; infra</h3>
+        <p>AWS (Lambda, ECS, EC2, S3, IAM, Glue, Athena, CloudWatch), Docker, CircleCI</p>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <p>PostgreSQL, MongoDB, Redis</p>
+      </div>
+      <div class="skill-group">
+        <h3>Testing</h3>
+        <p>Jest, Playwright — unit, integration, and end-to-end</p>
+      </div>
+      <div class="skill-group">
+        <h3>Ways of working</h3>
+        <p>Spec-driven development with Claude Code</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+
+    <article class="timeline-item">
+      <div class="timeline-heading">
+        <h3>Backend Software Engineer — RWS</h3>
+        <p class="timeline-dates">Feb 2023 — Present</p>
+      </div>
+      <ul class="bullets">
+        <li>Build and maintain scalable RESTful APIs using NestJS and TypeScript.</li>
+        <li>Design secure service-to-service communication using OAuth2 and API keys.</li>
+        <li>Build ETL pipelines and automation scripts in Python on AWS.</li>
+        <li>Implement CI/CD pipelines with CircleCI and automated testing.</li>
+        <li>Build and maintain end-to-end test suites with Playwright.</li>
+        <li>Apply spec-driven development — structuring requirements and acceptance criteria before implementation for predictable, traceable delivery.</li>
+      </ul>
+      <div class="achievements">
+        <p><strong>Integration monitoring platform</strong> — cut manual monitoring time from ~2 hours to 5 minutes (a 90% reduction) through automation and proactive alerting.</p>
+        <p><strong>Hortifruti Natural da Terra x iFood pre-order integration</strong> — built the backend integration for iFood's pre-order flow, reducing operational time and cost and simplifying financial reconciliation.</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-heading">
+        <h3>B.Sc. Software Engineering — FIAP</h3>
+        <p class="timeline-dates">Jan 2026 — Dec 2029</p>
+      </div>
+      <p class="timeline-note">
+        Relevant self-study coursework: Stanford Engineering Everywhere —
+        <a href="https://github.com/ArturBrandirws/CS106A" target="_blank" rel="noopener">CS106A</a>,
+        <a href="https://github.com/ArturBrandirws/CS106B" target="_blank" rel="noopener">CS106B</a>,
+        <a href="https://github.com/ArturBrandirws/CS107" target="_blank" rel="noopener">CS107</a>.
+      </p>
+    </article>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <h2>Let's talk</h2>
+  <p>São Paulo, Brazil · Open to remote, hybrid, and on-site work</p>
+  <div class="footer-links">
+    <a href="mailto:arturbrandi5@gmail.com">arturbrandi5@gmail.com</a>
+    <a href="https://github.com/ArturFBrandi" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/arturbrandi" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <p class="footer-copy">&copy; <span id="year"></span> Artur Brandi</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
